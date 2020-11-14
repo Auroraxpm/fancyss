@@ -1,6 +1,9 @@
 # 注
 fork 后的修改仅为自己路由器方便使用 trojan 。
 
+# 如果你遇到** 离线安装 ** 无法安装，你还需要在SSH中执行如下步骤。（请全部复制）
+- wget -4 -O /koolshare/scripts/ks_tar_install.sh https://github.com/Auroraxpm/fancyss/ks_tar_install.sh && chmod 777 /koolshare/scripts/ks_tar_install.sh
+
 测试通过版本：
 - R7000 - 380.70_0-X7.9.1
 - K3 TB 梅林380版本
