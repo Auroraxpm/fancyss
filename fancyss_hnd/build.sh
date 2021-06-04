@@ -16,11 +16,11 @@ cp_rules(){
 sync_v2ray_binary(){
 	v2ray_version=`cat ../v2ray_binary/latest.txt`
 	md5_latest=`md5sum ../v2ray_binary/$v2ray_version/v2ray_armv7 | sed 's/ /\n/g'| sed -n 1p`
-	md5_old=`md5sum shadowsocks/bin//v2ray | sed 's/ /\n/g'| sed -n 1p`
+	md5_old=`md5sum shadowsocks/bin//xray | sed 's/ /\n/g'| sed -n 1p`
 	if [ "$md5_latest"x != "$md5_old"x ]; then
 		echo update v2ray binary！
-		cp -rf ../v2ray_binary/$v2ray_version/v2ray_armv7 shadowsocks/bin/v2ray
-		cp -rf ../v2ray_binary/$v2ray_version/v2ctl shadowsocks/bin/
+		cp -rf ../v2ray_binary/$v2ray_version/v2ray_armv7 shadowsocks/bin/xray
+		
 	fi
 }
 
@@ -49,7 +49,7 @@ do_build() {
 	"home_url":"$HOME_URL",
 	"md5":"$md5value",
 	"name":"$MODULE",
-	"tar_url": "https://raw.githubusercontent.com/hq450/fancyss/master/fancyss_hnd/shadowsocks.tar.gz", 
+	"tar_url": "https://raw.githubusercontent.com/Auroraxpm/fancyss/master/fancyss_hnd/shadowsocks.tar.gz", 
 	"title":"$TITLE",
 	"version":"$VERSION"
 	}
