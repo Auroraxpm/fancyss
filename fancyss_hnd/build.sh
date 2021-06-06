@@ -14,7 +14,7 @@ cp_rules(){
 }
 
 sync_xray_binary(){
-	v2ray_version=`cat ../xray_binary/latest.txt`
+	xray_version=`cat ../xray_binary/latest.txt`
 	md5_latest=`md5sum ../xray_binary/$xray_version/xray_armv7 | sed 's/ /\n/g'| sed -n 1p`
 	md5_old=`md5sum shadowsocks/bin//xray | sed 's/ /\n/g'| sed -n 1p`
 	if [ "$md5_latest"x != "$md5_old"x ]; then
