@@ -6,5 +6,5 @@
 "name":"shadowsocks",
 "tar_url": "https://raw.githubusercontent.com/Auroraxpm/fancyss/master/fancyss_hnd/shadowsocks.tar.gz", 
 "title":"科学上网",
-"version":"2.0.6"
+"version":"2.0.6.beta"
 }
